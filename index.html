@@ -16,6 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://secondbreakfasthomestead.com/">
   <meta property="og:site_name" content="Second Breakfast Homestead">
+  <meta property="og:image" content="https://picsum.photos/seed/pasture/1200/630">
 
   <script type="application/ld+json">
   {
@@ -38,93 +39,159 @@
       <li><a href="plants.html">Plants</a></li>
       <li><a href="aquatics.html">Aquatics</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="btn btn-outline" style="padding:0.35rem 1rem; font-size:0.85rem;">Inquire</a></li>
+      <li><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- Hero -->
 <header class="hero">
-  <h1 class="hero-tagline">From Pasture, <span class="accent">Pond</span> &amp; Garden</h1>
-  <p class="hero-subtitle">
-    Pasture-raised livestock, productive plant starters, and ornamental fish
-    from a working regenerative homestead. Browse what's available and reach
-    out directly — we'll get you what you need.
-  </p>
-  <a href="#available" class="btn btn-primary">See What's Available</a>
+  <img
+    class="hero-bg"
+    src="https://picsum.photos/seed/pasture/1600/900"
+    alt=""
+    loading="eager"
+    decoding="async"
+  >
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-tagline">From Pasture, <span class="accent">Pond</span> &amp; Garden</h1>
+    <p class="hero-subtitle">
+      Pasture-raised livestock, productive plant starters, and ornamental fish
+      from a working regenerative homestead. Everything we sell is raised, grown,
+      or bred right here.
+    </p>
+    <div class="hero-cta">
+      <a href="#available" class="btn btn-primary">See What's Available</a>
+      <a href="contact.html" class="btn btn-white">Inquire Now</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll to explore</div>
 </header>
 
 <main>
-
-  <!-- Currently Available -->
-  <section id="available" class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <h2>Currently Available</h2>
-        <p>What's in stock right now across all three operations. Everything here is raised, grown, or bred on-site.</p>
-      </div>
-
-      <div class="highlights-grid">
-        <div class="highlight-card">
-          <div class="highlight-icon">🐖</div>
-          <span class="product-badge badge-coming-soon" style="display:inline-block;margin-bottom:0.5rem;">Coming Soon</span>
-          <h4>Pastured Pork</h4>
-          <p>Forest-raised heritage breed pork. Available by the half or whole. Late summer harvest.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🥚</div>
-          <span class="product-badge badge-in-stock" style="display:inline-block;margin-bottom:0.5rem;">In Stock</span>
-          <h4>Pastured Eggs</h4>
-          <p>Deep orange yolks from hens on rotated pasture. Available weekly by the dozen.</p>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🐟</div>
-          <span class="product-badge badge-seasonal" style="display:inline-block;margin-bottom:0.5rem;">Seasonal</span>
-          <h4>Ornamental Fish</h4>
-          <p>Medaka, CPDs, and guppies bred outdoors. Available spring through fall.</p>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="contact.html" class="btn btn-primary">Inquire About Availability</a>
-      </div>
-    </div>
-  </section>
 
   <!-- Three Pillars -->
   <section class="section">
     <div class="container">
       <div class="section-header">
+        <span class="section-label">What We Do</span>
         <h2>Three Operations, One System</h2>
         <p>Each pillar stands on its own. Together, they form a closed loop — animals build soil, soil grows plants, plants filter water, water sustains fish.</p>
       </div>
       <div class="pillars-grid">
+        <!-- Livestock -->
         <article class="pillar-card">
-          <div class="pillar-icon">🐖</div>
-          <h3>Livestock</h3>
-          <p>Pastured pork, eggs, and meat from animals raised on rotated pasture and forest understory.</p>
-          <a href="livestock.html" class="pillar-link">Browse Livestock</a>
+          <img
+            class="pillar-card-img"
+            src="https://picsum.photos/seed/piglets/600/400"
+            alt="Pastured livestock on green pasture"
+            loading="lazy"
+          >
+          <div class="pillar-card-body">
+            <h3>Livestock</h3>
+            <p>Pastured pork, eggs, and meat from animals raised on rotated pasture and forest understory — the way they were meant to live.</p>
+            <a href="livestock.html" class="pillar-link">Browse Livestock</a>
+          </div>
         </article>
+
+        <!-- Plants -->
         <article class="pillar-card">
-          <div class="pillar-icon">🌿</div>
-          <h3>Plants</h3>
-          <p>Plant starters, fruit trees, pond plants, and soil-building perennials — all started in living soil.</p>
-          <a href="plants.html" class="pillar-link">Browse Plants</a>
+          <img
+            class="pillar-card-img"
+            src="https://picsum.photos/seed/seedlings/600/400"
+            alt="Plant starters in a nursery"
+            loading="lazy"
+          >
+          <div class="pillar-card-body">
+            <h3>Plants</h3>
+            <p>Vegetable starters, fruit trees, pond plants, and soil-building perennials — all started in living soil, ready for real conditions.</p>
+            <a href="plants.html" class="pillar-link">Browse Plants</a>
+          </div>
         </article>
+
+        <!-- Aquatics -->
         <article class="pillar-card">
-          <div class="pillar-icon">🐟</div>
-          <h3>Aquatics</h3>
-          <p>Ornamental fish bred in outdoor pond systems, plus the supplies and knowledge to keep them thriving.</p>
-          <a href="aquatics.html" class="pillar-link">Browse Aquatics</a>
+          <img
+            class="pillar-card-img"
+            src="https://picsum.photos/seed/pondfish/600/400"
+            alt="Ornamental fish in a pond"
+            loading="lazy"
+          >
+          <div class="pillar-card-body">
+            <h3>Aquatics</h3>
+            <p>Ornamental fish bred in outdoor pond systems, plus curated supply kits and the knowledge to keep them thriving.</p>
+            <a href="aquatics.html" class="pillar-link">Browse Aquatics</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Values (condensed) -->
-  <section class="section section-alt">
+  <!-- Currently Available -->
+  <section id="available" class="section section-alt">
     <div class="container">
       <div class="section-header">
+        <span class="section-label">In Stock Now</span>
+        <h2>Currently Available</h2>
+        <p>What's ready right now across all three operations. Availability changes with the seasons — if you don't see what you're looking for, just ask.</p>
+      </div>
+
+      <div class="availability-grid">
+        <!-- Eggs -->
+        <div class="product-card">
+          <img class="product-card-img" src="https://picsum.photos/seed/fresheggs/600/380" alt="Pastured eggs" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Pastured Eggs</span>
+              <span class="product-badge badge-in-stock">In Stock</span>
+            </div>
+            <p class="product-desc">Deep orange yolks from hens on rotated pasture. Available weekly by the dozen.</p>
+            <div class="product-price">$6 / dozen</div>
+            <a href="contact.html?item=Pastured%20Eggs" class="btn-inquire">Inquire About Eggs</a>
+          </div>
+        </div>
+
+        <!-- Medaka -->
+        <div class="product-card">
+          <img class="product-card-img" src="https://picsum.photos/seed/medakafish/600/380" alt="Medaka rice fish" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Medaka (Japanese Rice Fish)</span>
+              <span class="product-badge badge-in-stock">In Stock</span>
+            </div>
+            <p class="product-desc">Hardy, colorful fish for outdoor tubs and patio ponds. Multiple color strains. Bred outdoors, not in tanks.</p>
+            <div class="product-price">$5–10 / fish</div>
+            <a href="contact.html?item=Medaka" class="btn-inquire">Inquire About Medaka</a>
+          </div>
+        </div>
+
+        <!-- Comfrey -->
+        <div class="product-card">
+          <img class="product-card-img" src="https://picsum.photos/seed/comfrey/600/380" alt="Comfrey plant" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Comfrey Root Cuttings</span>
+              <span class="product-badge badge-in-stock">In Stock</span>
+            </div>
+            <p class="product-desc">Bocking 14 — sterile, non-invasive. Excellent for mulch, compost activator, and animal feed supplement.</p>
+            <div class="product-price">$4 / cutting</div>
+            <a href="contact.html?item=Comfrey%20Cuttings" class="btn-inquire">Inquire About Comfrey</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="contact.html" class="btn btn-primary">Inquire About Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Approach</span>
         <h2>How We Work</h2>
       </div>
       <div class="values-grid">
@@ -149,7 +216,7 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="section">
+  <section class="section section-alt">
     <div class="container">
       <div class="newsletter-block">
         <h3>Stay in the Loop</h3>
@@ -177,10 +244,10 @@
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+  <div class="footer-inner">
     <div>
       <div class="footer-brand">Second Breakfast Homestead</div>
-      <div style="font-size: 0.85rem; margin-top: 0.2rem;">From Pasture, Pond &amp; Garden</div>
+      <div style="font-size:0.85rem; margin-top:0.2rem;">From Pasture, Pond &amp; Garden</div>
     </div>
     <ul class="footer-links">
       <li><a href="about.html">About</a></li>
@@ -188,7 +255,7 @@
       <li><a href="privacy.html">Privacy</a></li>
     </ul>
   </div>
-  <div class="footer-disclosure" style="max-width: var(--max-width); margin: 2rem auto 0; padding: 1rem 1.5rem 0;">
+  <div class="footer-disclosure">
     <p>Second Breakfast Homestead is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. This comes at no additional cost to you.</p>
   </div>
 </footer>

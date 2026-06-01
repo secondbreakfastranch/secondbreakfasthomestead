@@ -15,6 +15,7 @@
   <meta property="og:description" content="Pasture-raised pork, eggs, and meat from our working homestead.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://secondbreakfasthomestead.com/livestock.html">
+  <meta property="og:image" content="https://picsum.photos/seed/piglets/1200/630">
 
   <script type="application/ld+json">
   {
@@ -32,68 +33,85 @@
   <div class="nav-inner">
     <a href="/" class="nav-brand">Second Breakfast Homestead</a>
     <ul class="nav-links">
-      <li><a href="livestock.html">Livestock</a></li>
+      <li><a href="livestock.html" class="active">Livestock</a></li>
       <li><a href="plants.html">Plants</a></li>
       <li><a href="aquatics.html">Aquatics</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="btn btn-outline" style="padding:0.35rem 1rem; font-size:0.85rem;">Inquire</a></li>
+      <li><a href="contact.html" class="btn btn-outline btn-sm">Inquire</a></li>
     </ul>
   </div>
 </nav>
 
 <header class="pillar-hero pillar-hero-livestock">
-  <div class="pillar-hero-icon">🐖</div>
-  <h1>Livestock</h1>
-  <p>Pasture-raised and forest-fed. Heritage breed pork, eggs from hens on rotated pasture, and thoughtfully processed meat — all from animals raised the way they were meant to live.</p>
+  <img class="pillar-hero-bg" src="https://picsum.photos/seed/piglets/1600/800" alt="" loading="eager">
+  <div class="pillar-hero-overlay"></div>
+  <div class="pillar-hero-content">
+    <div class="pillar-hero-icon">🐖</div>
+    <h1>Livestock</h1>
+    <p>Pasture-raised and forest-fed. Heritage breed pork, eggs from hens on rotated pasture, and thoughtfully processed meat — all from animals raised the way they were meant to live.</p>
+  </div>
 </header>
 
 <main>
 
-  <!-- Currently Available -->
   <section class="section section-alt">
     <div class="container">
-      <h2>Currently Available</h2>
-      <p class="section-intro">What's in stock right now. Availability changes with the seasons — reach out if you don't see what you're looking for.</p>
+      <div class="section-header">
+        <span class="section-label">In Stock</span>
+        <h2>Currently Available</h2>
+        <p>What's available right now. Seasons dictate supply — reach out if you don't see what you're looking for.</p>
+      </div>
 
       <div class="availability-grid">
         <div class="product-card">
-          <div class="product-header">
-            <span class="product-name">Pastured Eggs</span>
-            <span class="product-badge badge-in-stock">In Stock</span>
+          <img class="product-card-img" src="https://picsum.photos/seed/fresheggs/600/380" alt="Pastured eggs" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Pastured Eggs</span>
+              <span class="product-badge badge-in-stock">In Stock</span>
+            </div>
+            <p class="product-desc">Eggs from hens that follow our pigs through rotated pasture. Deep orange yolks, firm whites, rich flavor. Available weekly by the dozen.</p>
+            <div class="product-price">$6 / dozen</div>
+            <a href="contact.html?item=Pastured%20Eggs" class="btn-inquire">Inquire About Eggs</a>
           </div>
-          <p class="product-desc">Eggs from hens that follow our pigs through rotated pasture. Deep orange yolks, firm whites, rich flavor. Available weekly by the dozen.</p>
-          <div class="product-price">$6 / dozen</div>
-          <a href="contact.html?item=Pastured%20Eggs" class="btn-inquire">Inquire About Eggs</a>
         </div>
 
         <div class="product-card">
-          <div class="product-header">
-            <span class="product-name">Whole Hog (Half)</span>
-            <span class="product-badge badge-coming-soon">Coming Soon</span>
+          <img class="product-card-img" src="https://picsum.photos/seed/pasturepigs/600/380" alt="Pastured pigs" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Whole Hog (Half)</span>
+              <span class="product-badge badge-coming-soon">Coming Soon</span>
+            </div>
+            <p class="product-desc">Heritage breed pork from hogs raised on forest understory and rotated pasture. Approximately 80–100 lbs of finished cuts. Late summer 2026 harvest.</p>
+            <div class="product-price">Inquire for pricing</div>
+            <a href="contact.html?item=Whole%20Hog%20Half" class="btn-inquire">Inquire About Pork</a>
           </div>
-          <p class="product-desc">Heritage breed pork from hogs raised on forest understory and rotated pasture. Sold by the half — approximately 80-100 lbs of finished cuts. Late summer 2026 harvest.</p>
-          <div class="product-price">Inquire for pricing</div>
-          <a href="contact.html?item=Whole%20Hog%20Half" class="btn-inquire">Inquire About Pork</a>
         </div>
 
         <div class="product-card">
-          <div class="product-header">
-            <span class="product-name">Whole Hog (Full)</span>
-            <span class="product-badge badge-coming-soon">Coming Soon</span>
+          <img class="product-card-img" src="https://picsum.photos/seed/forestpigs/600/380" alt="Forest-raised pigs" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Whole Hog (Full)</span>
+              <span class="product-badge badge-coming-soon">Coming Soon</span>
+            </div>
+            <p class="product-desc">A full hog — approximately 160–200 lbs of finished cuts. Includes custom processing options. Deposit required to reserve.</p>
+            <div class="product-price">Inquire for pricing</div>
+            <a href="contact.html?item=Whole%20Hog%20Full" class="btn-inquire">Inquire About Pork</a>
           </div>
-          <p class="product-desc">A full hog — approximately 160-200 lbs of finished cuts. Includes custom processing options. Deposit required to reserve.</p>
-          <div class="product-price">Inquire for pricing</div>
-          <a href="contact.html?item=Whole%20Hog%20Full" class="btn-inquire">Inquire About Pork</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How We Raise -->
   <section class="section">
     <div class="container">
-      <h2>How We Raise Our Animals</h2>
-      <p class="section-intro">No concrete. No confinement. Every animal here lives outdoors on rotated ground with fresh forage, clean water, and shelter from the elements.</p>
+      <div class="section-header">
+        <span class="section-label">Our Methods</span>
+        <h2>How We Raise Our Animals</h2>
+        <p>No concrete. No confinement. Every animal here lives outdoors on rotated ground with fresh forage, clean water, and shelter from the elements.</p>
+      </div>
 
       <div class="method-list">
         <div class="method-item">
@@ -112,22 +130,23 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section section-alt">
-    <div class="container" style="text-align:center;">
-      <h2>Ready to Order?</h2>
-      <p style="color:var(--color-text-light); max-width:480px; margin:0.5rem auto 1.5rem;">Tell us what you're interested in. We'll confirm availability, pricing, and pickup or delivery options.</p>
-      <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to Order?</h2>
+        <p>Tell us what you're interested in. We'll confirm availability, pricing, and pickup or delivery options.</p>
+        <a href="contact.html" class="btn btn-primary">Inquire Now</a>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+  <div class="footer-inner">
     <div>
       <div class="footer-brand">Second Breakfast Homestead</div>
-      <div style="font-size: 0.85rem; margin-top: 0.2rem;">From Pasture, Pond &amp; Garden</div>
+      <div style="font-size:0.85rem; margin-top:0.2rem;">From Pasture, Pond &amp; Garden</div>
     </div>
     <ul class="footer-links">
       <li><a href="about.html">About</a></li>
@@ -135,8 +154,8 @@
       <li><a href="privacy.html">Privacy</a></li>
     </ul>
   </div>
-  <div class="footer-disclosure" style="max-width: var(--max-width); margin: 2rem auto 0; padding: 1rem 1.5rem 0;">
-    <p>Second Breakfast Homestead is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. This comes at no additional cost to you.</p>
+  <div class="footer-disclosure">
+    <p>Second Breakfast Homestead is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases at no additional cost to you.</p>
   </div>
 </footer>
 
