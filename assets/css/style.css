@@ -185,8 +185,17 @@ a:hover { color: var(--color-primary-dark); }
   font-weight: 700;
   color: var(--color-dark);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 .nav-brand:hover { color: var(--color-primary); }
+
+.nav-logo {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+}
 
 .nav-links {
   display: flex;
@@ -927,6 +936,14 @@ a:hover { color: var(--color-primary-dark); }
   font-weight: 600;
   color: #FFF;
   margin-bottom: 0.3rem;
+}
+
+.footer-logo {
+  height: 28px;
+  width: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  opacity: 0.85;
 }
 
 .footer-links {
