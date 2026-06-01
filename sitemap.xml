@@ -6,44 +6,23 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://secondbreakfasthomestead.com/livestock.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://secondbreakfasthomestead.com/plants.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://secondbreakfasthomestead.com/aquatics.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://secondbreakfasthomestead.com/about.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/pastured-pork.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/eggs.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/meat-processing.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/plant-starters.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/trees.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/comfrey.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/ornamental-fish.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/pond-supplies.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://secondbreakfasthomestead.com/articles/aquascaping.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>

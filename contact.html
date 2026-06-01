@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inquire — Second Breakfast Homestead</title>
+  <meta name="description" content="Inquire about availability, pricing, or custom orders from Second Breakfast Homestead. We'll get back to you within 24 hours.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Second Breakfast Homestead</a>
+    <ul class="nav-links">
+      <li><a href="livestock.html">Livestock</a></li>
+      <li><a href="plants.html">Plants</a></li>
+      <li><a href="aquatics.html">Aquatics</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="btn btn-outline" style="padding:0.35rem 1rem; font-size:0.85rem;">Inquire</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <h1>Inquire</h1>
+  <p>Tell us what you're looking for. We'll confirm availability, answer your questions, and get you squared away — usually within 24 hours.</p>
+</header>
+
+<main class="page-content" style="max-width:640px;">
+
+  <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="Jane Smith">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="jane@example.com">
+    </div>
+
+    <div class="form-group">
+      <label>I'm interested in</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interest" value="Livestock"> Livestock</label>
+        <label><input type="checkbox" name="interest" value="Plants"> Plants</label>
+        <label><input type="checkbox" name="interest" value="Aquatics"> Aquatics</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="item">Specific Item (optional)</label>
+      <input type="text" id="item" name="item" placeholder="e.g., Pastured Eggs, Comfrey Cuttings, Medaka">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Tell us what you need — quantities, timeline, questions, anything that helps us help you."></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit">Send Inquiry</button>
+
+    <p style="font-size:0.85rem; color:var(--color-text-light); margin-top:1rem;">
+      Prefer email? Reach us directly at <strong>hello@secondbreakfasthomestead.com</strong>.
+    </p>
+
+  </form>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+    <div>
+      <div class="footer-brand">Second Breakfast Homestead</div>
+      <div style="font-size: 0.85rem; margin-top: 0.2rem;">From Pasture, Pond &amp; Garden</div>
+    </div>
+    <ul class="footer-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+  </div>
+  <div class="footer-disclosure" style="max-width: var(--max-width); margin: 2rem auto 0; padding: 1rem 1.5rem 0;">
+    <p>Second Breakfast Homestead is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases. This comes at no additional cost to you.</p>
+  </div>
+</footer>
+
+</body>
+</html>
