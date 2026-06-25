@@ -276,52 +276,54 @@ a:hover { color: var(--color-primary-dark); }
 }
 
 /* ========================================
-   Slim Hero Section
+   Compact Header
    ======================================== */
-.hero-slim {
-  text-align: center;
-  padding: 3.5rem 2rem 2.5rem;
-  background: var(--color-light);
+.hero-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  background: #F5EDDF;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
-.hero-slim-logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  margin: 0 auto 1rem;
-  box-shadow: var(--shadow-sm);
+.hero-mini-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
-.hero-slim-title {
+.hero-mini-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-dark);
   line-height: 1.2;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.01em;
+  margin: 0;
 }
 
-.hero-slim-tagline {
+.hero-mini-tagline {
   font-family: var(--font-body);
-  font-size: 1.05rem;
-  color: var(--color-text-light);
-  margin-bottom: 1.75rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin: 0.15rem 0 0;
 }
 
 /* ========================================
-   Map Section
+   Map Hero
    ======================================== */
-.map-section {
-  padding: 0 0 2rem;
-  background: var(--color-light);
+.map-hero {
+  padding: 0 0 1rem;
+  background: #F5EDDF;
 }
 
-.map-caption {
+.map-instruction {
   text-align: center;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-bottom: 1rem;
+  margin-top: 0.6rem;
   padding: 0 1.5rem;
 }
 
@@ -1052,20 +1054,13 @@ a:hover { color: var(--color-primary-dark); }
     justify-content: center;
   }
 
-  .hero-slim {
-    padding: 2.5rem 1.5rem 2rem;
+  .hero-mini {
+    padding: 1rem 1rem;
+    gap: 0.5rem;
   }
 
-  .hero-slim-title {
-    font-size: 1.6rem;
-  }
-
-  .map-caption {
-    font-size: 0.85rem;
-  }
-
-  .cta-banner {
-    padding: 2.5rem 1.5rem;
+  .hero-mini-title {
+    font-size: 1rem;
   }
 
   .footer-inner {
