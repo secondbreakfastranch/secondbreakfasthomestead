@@ -971,6 +971,77 @@ a:hover { color: var(--color-primary-dark); }
 }
 
 /* ========================================
+   Interactive Homestead Map
+   ======================================== */
+.homestead-map {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  background: #F5EDDF;
+}
+
+.homestead-map img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-zone {
+  position: absolute;
+  top: 18%;
+  bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.25s ease;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.map-zone:hover,
+.map-zone:focus-visible {
+  background: rgba(198, 123, 75, 0.10);
+  outline: none;
+}
+
+.map-zone:focus-visible {
+  box-shadow: inset 0 0 0 3px var(--color-primary);
+  border-radius: 4px;
+}
+
+.map-zone-left   { left: 0;       width: 32%; }
+.map-zone-center { left: 34%;     width: 32%; }
+.map-zone-right  { left: 68%;     width: 32%; }
+
+.map-zone-label {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 1.4vw, 1.1rem);
+  font-weight: 600;
+  color: var(--color-dark);
+  background: rgba(253, 248, 240, 0.90);
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 12px rgba(74, 55, 40, 0.12);
+  border: 1px solid var(--color-border);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.map-zone:hover .map-zone-label,
+.map-zone:focus-visible .map-zone-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
    Responsive
    ======================================== */
 @media (max-width: 1024px) {
