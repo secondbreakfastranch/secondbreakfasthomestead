@@ -281,7 +281,7 @@ a:hover { color: var(--color-primary-dark); }
 .top-block {
   background:
     linear-gradient(rgba(30, 22, 14, 0.72), rgba(36, 26, 16, 0.58)),
-    url('https://picsum.photos/seed/pasture/1600/800') center/cover no-repeat;
+    url('assets/images/pasture-bg.jpg') center/cover no-repeat;
   background-color: var(--color-dark);
 }
 
