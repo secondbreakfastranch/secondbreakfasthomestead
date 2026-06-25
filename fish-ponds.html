@@ -76,7 +76,7 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card-img" src="https://www.image2url.com/r2/default/images/1781546349109-3028d856-7a8b-49ff-82be-e470a9405957.jpg" alt="Celestial Pearl Danios" loading="lazy">
+          <img class="product-card-img" src="assets/images/cpd.jpg" alt="Celestial Pearl Danios" loading="lazy">
           <div class="product-card-body">
             <div class="product-header">
               <span class="product-name">Celestial Pearl Danios</span>
@@ -89,7 +89,18 @@
         </div>
 
         <div class="product-card">
-          <img class="product-card-img" src="assets/images/guppies.jpg" alt="Red Dragon Guppies" loading="lazy">
+          <div class="product-card-slider">
+            <img class="product-card-img active" src="assets/images/guppies.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <img class="product-card-img" src="assets/images/guppies-2.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <img class="product-card-img" src="assets/images/guppies-3.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <button class="slider-arrow slider-prev" aria-label="Previous image">&#8249;</button>
+            <button class="slider-arrow slider-next" aria-label="Next image">&#8250;</button>
+            <div class="slider-dots">
+              <span class="slider-dot active"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+            </div>
+          </div>
           <div class="product-card-body">
             <div class="product-header">
               <span class="product-name">Red Dragon Guppies</span>
@@ -178,5 +189,24 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.product-card-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.product-card-img');
+  const dots = slider.querySelectorAll('.slider-dot');
+  let i = 0;
+
+  function show(n) {
+    imgs[i].classList.remove('active');
+    dots[i].classList.remove('active');
+    i = (n + imgs.length) % imgs.length;
+    imgs[i].classList.add('active');
+    dots[i].classList.add('active');
+  }
+
+  slider.querySelector('.slider-prev').addEventListener('click', () => show(i - 1));
+  slider.querySelector('.slider-next').addEventListener('click', () => show(i + 1));
+  dots.forEach((dot, j) => dot.addEventListener('click', () => show(j)));
+});
+</script>
 </body>
 </html>
