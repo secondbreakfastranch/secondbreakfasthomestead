@@ -289,9 +289,7 @@ a:hover { color: var(--color-primary-dark); }
    Compact Header
    ======================================== */
 .hero-mini {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 1.5rem 1.5rem 1.25rem;
   background: none;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -305,13 +303,6 @@ a:hover { color: var(--color-primary-dark); }
   line-height: 1.2;
   margin: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
-}
-
-.hero-mini-tagline {
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.6);
-  margin: 0.15rem 0 0;
 }
 
 /* ========================================
