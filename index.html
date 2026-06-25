@@ -158,31 +158,56 @@
           </div>
         </div>
 
-        <!-- Medaka -->
+        <!-- CPD -->
         <div class="product-card">
-          <img class="product-card-img" src="https://picsum.photos/seed/medakafish/600/380" alt="Medaka rice fish" loading="lazy">
+          <img class="product-card-img" src="assets/images/cpd.jpg" alt="Celestial Pearl Danio" loading="lazy">
           <div class="product-card-body">
             <div class="product-header">
-              <span class="product-name">Medaka (Japanese Rice Fish)</span>
+              <span class="product-name">Celestial Pearl Danio</span>
               <span class="product-badge badge-in-stock">In Stock</span>
             </div>
-            <p class="product-desc">Hardy, colorful fish for outdoor tubs and patio ponds. Multiple color strains. Bred outdoors, not in tanks.</p>
-            <div class="product-price">$5–10 / fish</div>
-            <a href="contact.html?item=Medaka" class="btn-inquire">Inquire About Medaka</a>
+            <p class="product-desc">The galaxy rasbora. Small, stunning nano fish with deep blue bodies and golden spots. Tank-raised from our breeding colony.</p>
+            <div class="product-price">$8 each (Buy 5, get 1 free)</div>
+            <a href="contact.html?item=CPD" class="btn-inquire">Inquire About CPDs</a>
           </div>
         </div>
 
-        <!-- Comfrey -->
+        <!-- Guppies -->
         <div class="product-card">
-          <img class="product-card-img" src="https://picsum.photos/seed/comfrey/600/380" alt="Comfrey plant" loading="lazy">
+          <div class="product-card-slider">
+            <img class="product-card-img active" src="assets/images/guppies.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <img class="product-card-img" src="assets/images/guppies-2.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <img class="product-card-img" src="assets/images/guppies-3.jpg" alt="Red Dragon Guppies" loading="lazy">
+            <button class="slider-arrow slider-prev" aria-label="Previous image">&#8249;</button>
+            <button class="slider-arrow slider-next" aria-label="Next image">&#8250;</button>
+            <div class="slider-dots">
+              <span class="slider-dot active"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+            </div>
+          </div>
           <div class="product-card-body">
             <div class="product-header">
-              <span class="product-name">Comfrey Root Cuttings</span>
+              <span class="product-name">Red Dragon Guppies</span>
               <span class="product-badge badge-in-stock">In Stock</span>
             </div>
-            <p class="product-desc">Bocking 14 — sterile, non-invasive. Excellent for mulch, compost activator, and animal feed supplement.</p>
-            <div class="product-price">$4 / cutting</div>
-            <a href="contact.html?item=Comfrey%20Cuttings" class="btn-inquire">Inquire About Comfrey</a>
+            <p class="product-desc">Select strains bred in outdoor tubs during warm months. Vibrant color, strong genetics. Available late spring through early fall.</p>
+            <div class="product-price">$6 each (Buy 5, get 1 free)</div>
+            <a href="contact.html?item=Red%20Dragon%20Guppies" class="btn-inquire">Inquire About Red Dragon Guppies</a>
+          </div>
+        </div>
+
+        <!-- Half Hog -->
+        <div class="product-card">
+          <img class="product-card-img" src="assets/images/pork.jpg" alt="Pastured pigs" loading="lazy">
+          <div class="product-card-body">
+            <div class="product-header">
+              <span class="product-name">Half Hog</span>
+              <span class="product-badge badge-coming-soon">Coming Soon</span>
+            </div>
+            <p class="product-desc">Pigs from Second Breakfast Ranch make the best bacon! Inquire now if you would like to reserve for this season.</p>
+            <div class="product-price">Inquire for pricing</div>
+            <a href="contact.html?item=Half%20Hog" class="btn-inquire">Inquire About Pork</a>
           </div>
         </div>
       </div>
@@ -271,5 +296,24 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.product-card-slider').forEach(slider => {
+  const imgs = slider.querySelectorAll('.product-card-img');
+  const dots = slider.querySelectorAll('.slider-dot');
+  let i = 0;
+
+  function show(n) {
+    imgs[i].classList.remove('active');
+    dots[i].classList.remove('active');
+    i = (n + imgs.length) % imgs.length;
+    imgs[i].classList.add('active');
+    dots[i].classList.add('active');
+  }
+
+  slider.querySelector('.slider-prev').addEventListener('click', () => show(i - 1));
+  slider.querySelector('.slider-next').addEventListener('click', () => show(i + 1));
+  dots.forEach((dot, j) => dot.addEventListener('click', () => show(j)));
+});
+</script>
 </body>
 </html>
