@@ -683,11 +683,6 @@ a:hover { color: var(--color-primary-dark); }
   padding: 2rem;
 }
 
-.pillar-hero-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
 .pillar-hero-content h1 {
   color: #FFF;
   font-size: clamp(2rem, 5vw, 3rem);
